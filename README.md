@@ -1,56 +1,120 @@
-# Welcome to your Expo app 👋
+# ⚡ EV ChargeFinder
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### Electric Vehicle Charging Station Locator
 
-## Get started
+EV ChargeFinder is a mobile application developed using React Native, Expo, and TypeScript to help electric vehicle users discover charging stations, explore connector types, and estimate charging costs.
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+* 🗺️ **Interactive Map** — View charging stations on a map.
+* 📍 **Current Location** — Find stations near your current location.
+* 🔎 **Station Search** — Search by station name, address, operator, or connector.
+* 🔌 **Connector Filters** — Filter stations by connector type.
+* ⚡ **Station Details** — View station information, including charging power when available.
+* 🧭 **Google Maps Directions** — Open navigation to a selected station.
+* 💰 **Charging Cost Calculator** — Estimate charging costs based on battery capacity, charge percentage, and electricity rate.
+* 📱 **Mobile-Friendly UI** — A simple interface designed for mobile devices.
 
-2. Start the app
+## 🛠️ Technologies Used
 
-   ```bash
-   npx expo start
-   ```
+* React Native
+* Expo
+* TypeScript
+* Expo Router
+* React Native Maps
+* Expo Location
+* React Native Reanimated
+* Git and GitHub
 
-In the output, you'll find options to open the app in a
+## 📂 Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+EVChargeFinder/
+├── src/
+│   └── app/
+│       ├── _layout.tsx
+│       ├── index.tsx
+│       └── explore.tsx
+├── package.json
+├── app.json
+├── tsconfig.json
+└── README.md
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+*This is an illustrative structure; your actual project may contain additional files.*
 
-### Other setup steps
+## 🚀 Getting Started
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### Prerequisites
 
-## Learn more
+Install Node.js and npm. You will also need Expo Go or a compatible development build to run the app on a mobile device.
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Clone the Repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+```bash
+git clone https://github.com/kamala-rgb/EVChargeFinder.git
+```
 
-Join our community of developers creating universal apps.
+### 2. Open the Project Directory
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+cd EVChargeFinder
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Application
+
+```bash
+npx expo start
+```
+
+Follow the terminal instructions to run the app on a compatible device or emulator.
+
+## 💰 Charging Cost Calculator
+
+The application estimates the energy required to charge a battery from its current percentage to a target percentage.
+
+**Energy required (kWh):**
+
+Battery capacity × (Target charge − Current charge) ÷ 100
+
+**Estimated charging cost (₹):**
+
+Energy required × Electricity rate per kWh
+
+The result is an estimate. Actual costs may vary because of charging losses, station fees, taxes, and provider rates.
+
+## 📍 Charging Station Data
+
+Charging station information depends on the data source configured in the application. Station coverage and information accuracy may vary.
+
+Users should verify station locations, connector compatibility, operating status, and charging prices before travelling.
+
+## 🔒 Permissions and Privacy
+
+* Location permission is requested for location-based features.
+* Users can deny location access through their device settings.
+* Never commit passwords, API keys, or private credentials to a public repository.
+
+## 🎓 Project Information
+
+* **Project:** EV ChargeFinder
+* **Domain:** Electric Vehicle Technology
+* **Purpose:** EV charging station discovery and cost estimation
+* **Developed for:** Internship project
+
+## 👨‍💻 Author
+
+**Kamalakanta Hati**
+
+https://github.com/kamala-rgb
+
+
+
+*Developed for educational and demonstration purposes.*
